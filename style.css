@@ -153,8 +153,10 @@ footer{
     font-size:5rem;
     line-height:1;
     margin:20px 0;
+    text-shadow:
+    0 0 10px rgba(75,44,255,.4),
+    0 0 30px rgba(75,44,255,.2);
 }
-
 .hero-text p{
     color:#cfcfcf;
     font-size:1.1rem;
@@ -221,4 +223,26 @@ footer{
     max-width:100%;
     position:relative;
     z-index:1;
+}
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.hero-image img{
+    width:420px;
+    max-width:100%;
+    position:relative;
+    z-index:1;
+    animation: flutuar 4s ease-in-out infinite;
 }
