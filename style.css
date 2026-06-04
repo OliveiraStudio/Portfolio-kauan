@@ -248,7 +248,7 @@ footer{
 .hero-image::before{
     content:"";
     position:absolute;
-    width:500px;
+    width:850px;
     height:500px;
     background:#23145b;
     filter:blur(120px);
@@ -258,7 +258,7 @@ footer{
 }
 
 .hero-image img{
-    width:900px;
+    width:850px;
     max-width:none;
     position:relative;
     top:30px;
