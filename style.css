@@ -196,3 +196,29 @@ footer{
     width:420px;
     max-width:100%;
 }
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.hero-image::before{
+    content:'';
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#23145b;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.5;
+    z-index:0;
+}
+
+.hero-image img{
+    width:420px;
+    max-width:100%;
+    position:relative;
+    z-index:1;
+}
