@@ -242,10 +242,19 @@ footer{
 }
 
 .hero-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position:relative;
+}
+
+.hero-image::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#23145b;
+    filter:blur(120px);
+    opacity:.35;
+    border-radius:50%;
+}
 }
 
 .hero-image img{
