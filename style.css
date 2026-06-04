@@ -242,9 +242,10 @@ footer{
 }
 
 .hero-image img{
-    width:420px;
+    width:500px;
     max-width:100%;
     position:relative;
+    top:30px;
     z-index:1;
     animation: flutuar 4s ease-in-out infinite;
 }
