@@ -45,15 +45,6 @@ nav a:hover{
     color:#23145b;
 }
 
-.hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-
 .hero h1{
     font-size:4rem;
     margin-bottom:10px;
