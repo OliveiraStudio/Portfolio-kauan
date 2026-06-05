@@ -628,3 +628,26 @@ footer{
     background:#23145b;
     transform:rotate(180deg);
 }
+
+.light-mode{
+    background:#f5f5f5;
+    color:#111;
+}
+
+.light-mode header{
+    background:rgba(255,255,255,.9);
+}
+
+.light-mode nav a{
+    color:#111;
+}
+
+.light-mode .card,
+.light-mode .stat-card{
+    background:white;
+    color:#111;
+}
+
+.light-mode p{
+    color:#444;
+}
