@@ -91,7 +91,7 @@
 
     <!-- SOBRE -->
 
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre hidden">
 
         <div class="sobre-container">
 
@@ -144,7 +144,7 @@
 
     </section>
     
-    <section id="habilidades" class="habilidades">
+    <section id="habilidades" class="habilidades hidden">
 
     <span class="tag">HABILIDADES</span>
 
@@ -202,7 +202,7 @@
 
     <!-- PROJETOS -->
 
-  <section id="projetos" class="projetos">
+  <section id="projetos" class="projetos hidden">
 
     <span class="tag">PORTFÓLIO</span>
 
@@ -294,7 +294,7 @@
 
     <!-- CONTATO -->
 
-    <section id="contato" class="contato">
+    <section id="contato" class="contato hidden">
 
         <span class="tag">CONTATO</span>
 
@@ -351,6 +351,22 @@ themeBtn.addEventListener("click", () => {
         themeBtn.innerHTML = "🌙";
     }
 
+});
+
+</script>
+        
+        <script>
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".hidden").forEach((el)=>{
+    observer.observe(el);
 });
 
 </script>
