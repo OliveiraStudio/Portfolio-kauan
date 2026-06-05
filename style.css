@@ -38,11 +38,13 @@ header{
 }
 
 .logo{
-    font-size:28px;
-    font-weight:700;
+    font-size:32px;
+    font-weight:800;
     color:#4b2cff;
-}
 
+    text-shadow:
+    0 0 10px rgba(75,44,255,.5);
+}
 nav a{
     color:white;
     text-decoration:none;
@@ -79,8 +81,10 @@ h2{
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 0 20px rgba(75,44,255,.5);
+    transform:translateY(-5px) scale(1.03);
+    box-shadow:
+    0 0 20px rgba(75,44,255,.5),
+    0 0 40px rgba(75,44,255,.3);
 }
 
 .btn-outline{
@@ -650,4 +654,57 @@ footer{
 
 .light-mode p{
     color:#444;
+}
+
+/* ANIMAÇÕES */
+
+.hero-text{
+    animation: aparecerEsquerda 1s ease;
+}
+
+.hero-image{
+    animation: aparecerDireita 1.2s ease;
+}
+
+.sobre,
+.habilidades,
+.projetos,
+.contato{
+    animation: aparecerBaixo 1s ease;
+}
+
+@keyframes aparecerEsquerda{
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes aparecerDireita{
+    from{
+        opacity:0;
+        transform:translateX(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes aparecerBaixo{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
