@@ -611,3 +611,20 @@ footer{
     box-shadow:
     0 0 35px rgba(37,211,102,.8);
 }
+
+.theme-btn{
+    background:transparent;
+    border:1px solid #23145b;
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    background:#23145b;
+    transform:rotate(180deg);
+}
