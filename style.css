@@ -432,19 +432,20 @@ footer{
 }
 
 .card-top{
-    font-size:3rem;
+    font-size:2rem;
     margin-bottom:20px;
 }
 
 .card-tech{
     display:flex;
+    justify-content:center;
     gap:10px;
     flex-wrap:wrap;
     margin:20px 0;
 }
 
 .card-tech span{
-    background:#0f0f0f;
+    background:#111;
     border:1px solid #23145b;
     padding:8px 14px;
     border-radius:30px;
@@ -481,3 +482,4 @@ footer{
     top:-30%;
     left:-20%;
 }
+
