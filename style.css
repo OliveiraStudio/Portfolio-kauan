@@ -539,3 +539,39 @@ footer{
 .design{
     width:80%;
 }
+
+@keyframes aparecer {
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-text{
+    animation:aparecer 1s ease forwards;
+}
+
+.hero-image{
+    animation:aparecer 1.3s ease forwards;
+}
+
+.sobre{
+    animation:aparecer 1.5s ease forwards;
+}
+
+.projetos{
+    animation:aparecer 1.7s ease forwards;
+}
+
+.habilidades{
+    animation:aparecer 1.9s ease forwards;
+}
+
+.contato{
+    animation:aparecer 2.1s ease forwards;
+}
