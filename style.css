@@ -575,3 +575,39 @@ footer{
 .contato{
     animation:aparecer 2.1s ease forwards;
 }
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+
+    width:65px;
+    height:65px;
+
+    background:#25D366;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+    text-decoration:none;
+
+    box-shadow:
+    0 0 20px rgba(37,211,102,.5);
+
+    z-index:9999;
+
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    box-shadow:
+    0 0 35px rgba(37,211,102,.8);
+}
