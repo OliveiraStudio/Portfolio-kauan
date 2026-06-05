@@ -398,3 +398,32 @@ footer{
     margin-bottom:25px;
     line-height:1.7;
 }
+
+.hero-bg-text{
+    position:absolute;
+    font-size:10rem;
+    font-weight:800;
+    color:rgba(255,255,255,0.03);
+
+    left:50%;
+    top:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    white-space:nowrap;
+    pointer-events:none;
+    z-index:0;
+    letter-spacing:10px;
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-text,
+.hero-image{
+    position:relative;
+    z-index:2;
+}
