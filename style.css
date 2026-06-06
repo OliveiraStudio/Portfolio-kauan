@@ -719,3 +719,49 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
+
+/* FOOTER PREMIUM */
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    border-top:1px solid #23145b;
+    margin-top:80px;
+}
+
+.footer-logo{
+    font-size:3rem;
+    font-weight:800;
+    color:#4b2cff;
+    text-shadow:0 0 15px rgba(75,44,255,.5);
+    margin-bottom:15px;
+}
+
+footer p{
+    max-width:600px;
+    margin:0 auto 25px;
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#4b2cff;
+}
+
+footer span{
+    color:#888;
+    font-size:.9rem;
+}
