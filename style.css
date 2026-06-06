@@ -385,6 +385,8 @@ footer{
     );
     opacity:0;
     transition:.4s;
+
+    pointer-events:none;
 }
 
 .card:hover{
@@ -480,6 +482,8 @@ footer{
     );
 
     transition:.6s;
+
+    pointer-events:none;
 }
 
 .card:hover::after{
